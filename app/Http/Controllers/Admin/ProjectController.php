@@ -43,7 +43,7 @@ class ProjectController extends Controller
             'content' =>$formData['content'],
         ]);
 
-        return redirect()->route('admin.projects.index');
+        return redirect()->route('admin.projects.show', compact('project'));
     }
 
     /**
@@ -69,14 +69,14 @@ class ProjectController extends Controller
     {
         $formData = $request->validated();
 
-        $project = Project::create([
+        $project->update([
 
             'title' => $formData['title'],
             'slug' => str()->slug($formData['title']),
             'content' =>$formData['content'],
         ]);
 
-        return redirect()->route('admin.projects.index');
+        return redirect()->route('admin.projects.show', compact('project'));
     }
 
     /**
