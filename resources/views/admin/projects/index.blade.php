@@ -40,7 +40,7 @@
                             </td>
                             <td>
                                 <a href="{{ route('admin.projects.edit', ['project' => $project->id]) }}" class="btn btn-danger">
-                                    Edit
+                                    Update
                                 </a>
                             </td>
                             <td>

@@ -23,6 +23,13 @@
                 <br>
                 <span class="card-text">
                     <strong>
+                        Slug:
+                    </strong>
+                    {{ $project->slug }}
+                </span>
+                <br>
+                <span class="card-text">
+                    <strong>
                         Content:
                     </strong>
                     {{ $project->content }}

@@ -45,7 +45,7 @@
     
                 <div class="text-center">
                     <button type="submit" class="btn btn-danger w-25">
-                        Edit
+                        Update
                     </button>
                 </div>
             </form>
